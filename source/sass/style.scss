@@ -1,0 +1,43 @@
+@import "normalize.scss";
+@import "fonts.scss";
+@import "blocks/visually-hidden/visually-hidden.scss";
+@import "blocks/page-header/page-header.scss";
+@import "blocks/main-nav/main-nav.scss";
+@import "blocks/site-list/site-list.scss";
+@import "blocks/page-main/page-main.scss";
+@import "blocks/promo-program/promo-program.scss";
+@import "blocks/button/button.scss";
+@import "blocks/promo-product/promo-product.scss";
+@import "blocks/for-slim/for-slim.scss";
+@import "blocks/for-weight/for-weight.scss";
+@import "blocks/advantages/advantages.scss";
+@import "blocks/page-footer/page-footer.scss";
+@import "blocks/social/social.scss";
+@import "blocks/copyright/copyright.scss";
+@import "blocks/catalog/catalog.scss";
+@import "blocks/product/product.scss";
+@import "blocks/show-settings/show-settings.scss";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  max-width: 320px; /*Temprorary*/
+
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
