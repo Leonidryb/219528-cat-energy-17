@@ -62,3 +62,21 @@
   font-weight: 400;
   color: #444444;
 }
+
+.show-settings__button-all {
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .show-settings {
+    width: 324px;
+    min-height: 431px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .show-settings {
+    width: 245px;
+  }
+}

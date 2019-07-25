@@ -40,3 +40,27 @@
     color: rgba(17, 17, 17, 0.3);
   }
 }
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+    justify-content: space-between;
+
+    width: 450px;
+  }
+
+  .site-list__item {
+    padding: 0;
+    border: none;
+
+    &:first-child {
+      border: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    width: 570px;
+  }
+}

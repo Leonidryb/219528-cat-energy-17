@@ -8,3 +8,45 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    height: 85px; /*temprorary*/
+
+    padding-top: 24px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .page-header__wrapper {
+    width: 192px;
+
+    padding: 0;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: 1300px;
+    height: 113px; /*temprorary*/
+
+    margin: 0 auto;
+    margin-bottom: -113px;
+    padding-top: 53px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .page-header__wrapper {
+    width: 245px;
+
+    padding: 0;
+  }
+
+  .inner-page .page-header {
+    margin-bottom: 0;
+  }
+}

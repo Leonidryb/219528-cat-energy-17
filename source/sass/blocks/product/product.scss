@@ -35,3 +35,27 @@
   line-height: 16px;
   color: #444444;
 }
+
+@media (min-width: $tablet-width) {
+  .product {
+    width: 324px;
+    min-height: 431px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+
+    border: none;
+
+    &:first-child {
+      border: none;
+    }
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .product {
+    width: 245px;
+  }
+}

@@ -11,3 +11,20 @@
   font-weight: 400;
   color: #111111;
 }
+
+
+@media (min-width: $tablet-width) {
+  .page-main__title {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 65px;
+
+    font-size: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 83px;
+}
