@@ -39,6 +39,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-nav {
+    padding-top: 10px;
+    text-align: center;
+  }
+
   .main-nav__toggle {
     display: none;
   }

@@ -47,3 +47,15 @@
     color: rgba(68, 68, 68, 0.3);
   }
 }
+
+@media (min-width: $tablet-width) {
+  .button {
+    width: 245px;
+
+    padding: 16px 16px;
+    padding-left: 13px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

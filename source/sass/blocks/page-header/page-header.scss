@@ -12,8 +12,6 @@
 @media (min-width: $tablet-width) {
   .page-header {
     display: flex;
-    justify-content: space-between;
-    height: 85px; /*temprorary*/
 
     padding-top: 24px;
     padding-left: 30px;
@@ -21,9 +19,18 @@
   }
 
   .page-header__wrapper {
-    width: 192px;
+    width: 174px;
 
     padding: 0;
+  }
+
+  .page-header__nav {
+    margin-left: 96px;
+  }
+
+  .page-header__logo-image {
+    width: 174px;
+    height: 59px;
   }
 }
 
@@ -48,5 +55,10 @@
 
   .inner-page .page-header {
     margin-bottom: 0;
+  }
+
+  .page-header__logo-image {
+    width: 203px;
+    height: 60px;
   }
 }

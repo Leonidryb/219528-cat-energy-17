@@ -64,34 +64,46 @@
   }
 
   .promo-program__header {
-    width: 427px;
+    width: 514px;
 
-    margin-bottom: 48px;
-    padding-left: 90px;
+    margin-bottom: 47px;
+    padding-left: 87px;
   }
 
   .promo-program__intro {
+    font-size: 60px;
+    line-height: 60px;
     text-align: left;
+
+    margin-bottom: 42px;
+    padding: 0;
   }
 
   .promo-program__slogan {
     text-align: left;
 
-    padding-bottom: 0;
+    font-size: 20px;
+    line-height: 20px;
+
+    padding: 0;
   }
 
   .promo-program__picture {
     order: 3;
 
-    width: 709px; /*Temprorary*/
-    height: 609px; /*Temprorary*/
+    width: 709px;
+    height: 609px;
 
     margin-bottom: 0;
   }
 
+  .promo-program picture {
+    order: 3;
+  }
+
   .promo-program__link {
     margin-left: 90px;
-    margin-bottom: -82px;
+    margin-bottom: -80px;
 
     z-index: 1;
   }
