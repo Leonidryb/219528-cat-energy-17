@@ -22,10 +22,17 @@
 
 @media (min-width: $tablet-width) {
   .promo-product {
-    margin-bottom: 51px;
+    margin-bottom: 46px;
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 0;
+  }
+
+  .promo-product__list {
+    display: flex;
+    flex-direction: column;
+
+    width: 708px;
   }
 
   .promo-product__item {
