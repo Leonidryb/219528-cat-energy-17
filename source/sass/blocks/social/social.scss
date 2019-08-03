@@ -37,25 +37,25 @@
   height: 22px;
 }
 
+.social__link:hover .social__link-icon,
+.social__link:focus .social__link-icon {
+  path,
+  circle {
+    fill: #68b738;
+  }
+}
+
+.social__link:active .social__link-icon {
+  path,
+  circle {
+    fill: rgba(104, 183, 56, 0.3);
+  }
+}
+
 .social__link-icon {
   path,
   circle {
     fill: #666666;
-  }
-
-  &:hover,
-  &:focus {
-    path,
-    circle {
-      fill: #68b738;
-    }
-  }
-
-  &:active {
-    path,
-    circle {
-      fill: rgba(104, 183, 56, 0.3);
-    }
   }
 }
 

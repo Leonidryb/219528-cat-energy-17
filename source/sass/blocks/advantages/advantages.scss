@@ -194,4 +194,10 @@
   .advantages__item--3 {
     margin-right: 80px;
   }
+
+  .advantages__item--2 {
+    &::before {
+      right: 62px;
+    }
+  }
 }

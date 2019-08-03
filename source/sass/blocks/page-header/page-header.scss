@@ -37,11 +37,11 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
+    justify-content: space-between;
     width: 1300px;
-    height: 113px; /*temprorary*/
 
     margin: 0 auto;
-    margin-bottom: -113px;
+    margin-bottom: -117px;
     padding-top: 53px;
     padding-left: 40px;
     padding-right: 40px;

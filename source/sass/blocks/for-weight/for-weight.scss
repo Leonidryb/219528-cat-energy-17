@@ -188,3 +188,44 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .for-weight__title {
+    width: 465px;
+
+    margin-bottom: 76px;
+    padding-left: 163px;
+
+    &::before,
+    &::after {
+      display: block;
+    }
+
+    &::before {
+      width: 100px;
+      height: 100px;
+
+      left: 1px;
+      top: -28px;
+    }
+
+    &::after {
+      width: 134px;
+      height: 57px;
+
+      left: -17px;
+      top: -6px;
+    }
+  }
+
+  .for-weight__description {
+    width: 465px;
+
+    margin-bottom: 30px;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+}
