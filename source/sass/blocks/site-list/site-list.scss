@@ -96,10 +96,13 @@
     width: 570px;
 
     font-size: 20px;
-    color: #ffffff;
+
+    &--index {
+      color: #ffffff;
+    }
   }
 
-  .site-list__item {
+  .site-list--index .site-list__item {
     &::after {
       background-color: #ffffff;
 
@@ -109,5 +112,16 @@
 
   .site-list__link {
     padding-top: 10px;
+  }
+
+  .site-list--index .site-list__link {
+    &:hover:not(.site-list__link--active),
+    &:focus:not(.site-list__link--active) {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:active:not(.site-list__link--active) {
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 }
