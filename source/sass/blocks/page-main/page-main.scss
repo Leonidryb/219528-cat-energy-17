@@ -1,7 +1,7 @@
 .page-main__title {
   margin: 0;
   padding-top: 15px;
-  padding-bottom: 35px;
+  padding-bottom: 28px;
   padding-left: 20px;
   padding-right: 20px;
 
@@ -17,14 +17,37 @@
   .page-main__title {
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 65px;
+    padding-top: 53px;
 
     font-size: 60px;
+  }
+
+  .page-main__item--first {
+    margin-top: 53px;
+  }
+
+  .page-main__item--second {
+    margin-bottom: 46px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 83px;
+  .page-main__item--first {
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+
+  .page-main__item--second {
+    margin: 0 auto;
+    margin-bottom: 74px;
+  }
+
+  .page-main__title {
+    width: 1300px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 71px;
+    padding-bottom: 45px;
+  }
 }

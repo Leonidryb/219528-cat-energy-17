@@ -14,6 +14,8 @@
 }
 
 .for-slim__title {
+  position: relative;
+
   margin: 0;
   margin-bottom: 30px;
   padding-left: 70px;
@@ -22,9 +24,40 @@
   line-height: 37px;
   font-weight: 400;
   text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 50px;
+    height: 50px;
+
+    left: 2px;
+    top: -5px;
+
+    background-color: #68b738;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    width: 50px;
+    height: 50px;
+
+    left: 9px;
+    top: -9px;
+
+    background-image: url("../../../img/icon-cat-slim.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
 }
 
 .for-slim__description {
+  position: relative;
+
   font-family: "Arial", sans-serif;
   color: #444444;
 
@@ -36,8 +69,162 @@
 }
 
 .for-slim__link {
+  position: relative;
+
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   color: inherit;
+
+  &:active {
+    color: rgba(17, 17, 17, 0.3);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 25px;
+    height: 23px;
+
+    right: -35px;
+    top: 8px;
+
+    background-image: url("../../../img/icon-right-arrow-long.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    width: 34px;
+    background-image: url("../../../img/icon-right-arrow-verylong.svg");
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .for-slim {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 75px;
+    padding-bottom: 61px;
+    padding-left: 52px;
+    padding-right: 52px;
+  }
+
+  .for-slim__title {
+    width: 375px;
+
+    margin: 0;
+    margin-bottom: 26px;
+    padding: 0;
+
+    font-size: 36px;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  .for-slim__description {
+    width: 375px;
+
+    margin: 0;
+    margin-bottom: 56px;
+    padding: 0;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    border-bottom: none;
+
+
+    &::before {
+      content: "";
+      position: absolute;
+
+      width: 200px;
+      height: 200px;
+
+      right: -219px;
+      top: -47px;
+
+      background-color: #68b738;
+      border-radius: 50%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+
+      width: 141px;
+      height: 194px;
+
+      right: -190px;
+      top: -59px;
+
+      background-image: url("../../../img/icon-cat-slim.svg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .for-slim__link {
+    width: 375px;
+
+    font-size: 20px;
+    line-height: 20px;
+
+    &::before {
+      left: 131px;
+      top: 4px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .for-slim__title {
+    width: 465px;
+
+    margin-bottom: 76px;
+    padding-left: 163px;
+
+    &::before,
+    &::after {
+      display: block;
+    }
+
+    &::before {
+      width: 100px;
+      height: 100px;
+
+      left: 0;
+      top: -28px;
+    }
+
+    &::after {
+      width: 71px;
+      height: 97px;
+
+      left: 14px;
+      top: -34px;
+    }
+  }
+
+  .for-slim__description {
+    width: 465px;
+
+    margin-bottom: 30px;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
 }

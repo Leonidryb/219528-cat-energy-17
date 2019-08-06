@@ -64,34 +64,49 @@
   }
 
   .promo-program__header {
-    width: 427px;
+    width: 514px;
 
-    margin-bottom: 48px;
-    padding-left: 90px;
+    margin-bottom: 47px;
+    padding-left: 87px;
   }
 
   .promo-program__intro {
+    font-size: 60px;
+    line-height: 60px;
     text-align: left;
+
+    margin-bottom: 42px;
+    padding: 0;
   }
 
   .promo-program__slogan {
     text-align: left;
 
-    padding-bottom: 0;
+    font-size: 20px;
+    line-height: 20px;
+
+    padding: 0;
   }
 
   .promo-program__picture {
     order: 3;
 
-    width: 709px; /*Temprorary*/
-    height: 609px; /*Temprorary*/
+    width: 709px;
+    height: 609px;
 
     margin-bottom: 0;
   }
 
+  .promo-program__picture-wrapper {
+    order: 3;
+
+    width: 709px;
+    height: 609px;
+  }
+
   .promo-program__link {
     margin-left: 90px;
-    margin-bottom: -82px;
+    margin-bottom: -80px;
 
     z-index: 1;
   }
@@ -100,20 +115,29 @@
 @media (min-width: $desktop-width) {
   .promo-program {
     flex-wrap: wrap;
-    width: 1300px; /*Temprorary*/
-    height: 696px;  /*Temprorary*/
+    flex-direction: row;
+    align-items: flex-start;
 
-    margin: 0 auto;
+    width: 1300px;
+
     padding-top: 142px;
     padding-left: 40px;
     padding-right: 40px;
+
+    background-image: url("../../../img/index-background-desktop@1x.jpg");
+    background-position: 100% 0;
+
+    overflow: hidden;
   }
 
   .promo-program__header {
+    order: 1;
+
     width: 500px;
 
-    margin-bottom: 48px;
-    padding-left: 82px;
+    margin-bottom: 52px;
+    padding-top: 80px;
+    padding-left: 80px;
 
     z-index: 1;
   }
@@ -124,15 +148,25 @@
   }
 
   .promo-program__picture {
-    width: 552px; /*Temprorary*/
-    height: 499px; /*Temprorary*/
+    width: 552px;
+    height: 499px;
 
-    margin-left: -265px;
+    margin-left: -50px;
+  }
+
+  .promo-program__picture-wrapper {
+    order: 2;
+
+    width: 552px;
+    height: 499px;
   }
 
   .promo-program__link {
-    margin-left: 82px;
-    margin-bottom: 0;
+    order: 3;
+
+    margin-left: 80px;
+    margin-top: -185px;
+    margin-bottom: 188px;
 
     z-index: 1;
   }
