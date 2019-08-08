@@ -49,7 +49,7 @@
     left: 9px;
     top: -9px;
 
-    background-image: url("../../../img/icon-cat-slim.svg");
+    background-image: url("../img/icon-cat-slim.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
   }
@@ -90,7 +90,7 @@
     right: -35px;
     top: 8px;
 
-    background-image: url("../../../img/icon-right-arrow-long.svg");
+    background-image: url("../img/icon-right-arrow-long.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
   }
@@ -98,7 +98,7 @@
   &:hover::before,
   &:focus::before {
     width: 34px;
-    background-image: url("../../../img/icon-right-arrow-verylong.svg");
+    background-image: url("../img/icon-right-arrow-verylong.svg");
   }
 
   &:active::before {
@@ -169,7 +169,7 @@
       right: -190px;
       top: -59px;
 
-      background-image: url("../../../img/icon-cat-slim.svg");
+      background-image: url("../img/icon-cat-slim.svg");
       background-position: 0 0;
       background-repeat: no-repeat;
     }
