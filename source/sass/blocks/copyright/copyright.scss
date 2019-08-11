@@ -27,25 +27,21 @@
 .copyright__link-logo {
   display: block;
 
-  width: 33px;
-  height: 40px;
+  width: 27px;
+  height: 34px;
 
-  path {
-    fill: #666666;
+  &:hover .copyright__picture-logo,
+  &:focus .copyright__picture-logo {
+    fill: #68b738;
   }
 
-  &:hover,
-  &:focus {
-    path {
-      fill: #68b738;
-    }
+  &:active .copyright__picture-logo {
+    fill: rgba(104, 183, 56, 0.3);
   }
+}
 
-  &:active {
-    path {
-      fill: rgba(104, 183, 56, 0.3);
-    }
-  }
+.copyright__picture-logo {
+  fill: #666666;
 }
 
 @media (min-width: $tablet-width) {
@@ -55,6 +51,6 @@
   }
 
   .copyright__link {
-    margin-right: 14px;
+    margin-right: 20px;
   }
 }

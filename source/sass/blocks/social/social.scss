@@ -39,24 +39,15 @@
 
 .social__link:hover .social__link-icon,
 .social__link:focus .social__link-icon {
-  path,
-  circle {
-    fill: #68b738;
-  }
+  fill: #68b738;
 }
 
 .social__link:active .social__link-icon {
-  path,
-  circle {
-    fill: rgba(104, 183, 56, 0.3);
-  }
+  fill: rgba(104, 183, 56, 0.3);
 }
 
 .social__link-icon {
-  path,
-  circle {
-    fill: #666666;
-  }
+  fill: #666666;
 }
 
 @media (min-width: $tablet-width) {
@@ -86,15 +77,15 @@
   }
 
   .social__link-icon--instagram {
-    width: 26px;
-    height: 26px;
+    width: 29px;
+    height: 29px;
 
     padding-left: 3px;
   }
 
   .social__link-icon--facebook {
     width: 14px;
-    height: 28px;
+    height: 30px;
 
     padding-bottom: 3px;
   }
