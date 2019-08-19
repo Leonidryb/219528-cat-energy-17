@@ -85,6 +85,33 @@
     </section>
   </main>
 
+  <section class="map">
+    <div class="map__container">
+      <h2 class="map__title visually-hidden">Как до нас добраться</h2>
+      <section class="map__item main-contacts">
+        <h2 class="main-contacts__title visually-hidden">Наши контакты</h2>
+        <p class="main-contacts__slogan">
+          Приглашаем<br>к сотрудничеству дилеров!
+        </p>
+        <address class="main-contacts__addres">
+          ул. Большая Конюшенная, д. 19/8 <div class="main-contacts__wrapper">Санкт-Петербург</div>
+        </address>
+      </section>
+      <div class="map__wrapper map__wrapper--noresponsive">
+        <picture>
+          <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp, img/bg-map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp, img/bg-map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+
+          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png, img/bg-map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png 2x">
+          <img class="map__picture map__picture--noresponsive" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" height="362" alt="Изображение схемы проезда до ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        </picture>
+      </div>
+    </div>
+    <iframe class="map__interactive map__interactive--responsive" src="https://yandex.ru/map-widget/v1/?um=constructor%3A27a23e4e9aeca030d3e724f54f6a0e0bee736293a364d377c93f540d4ad8f6ee&amp;source=constructor" height="362"></iframe>
+  </section>
+
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <div class="page-footer__logo">
