@@ -198,9 +198,11 @@
     width: 1300px;
 
     margin: 0 auto;
-    padding-bottom: 0;
+    padding-bottom: 12px;
     padding-left: 40px;
     padding-right: 40px;
+
+    border-bottom: none;
   }
 
   .advantages__item {
