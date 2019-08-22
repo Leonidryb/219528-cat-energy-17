@@ -326,6 +326,8 @@
 
     border-bottom: 1px #bebebe dotted;
 
+    cursor: pointer;
+
     &:hover,
     &:focus {
       border-bottom: 1px #bebebe solid;
@@ -367,6 +369,8 @@
     border: solid 1px #cdcdcd;
 
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+
+    cursor: pointer;
 
     &:hover,
     &:focus {
