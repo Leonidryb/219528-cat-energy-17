@@ -44,13 +44,16 @@
 }
 
 .additional-catalog__list {
-  margin: 0;
   padding: 0;
   margin-bottom: 39px;
   padding-left: 20px;
   padding-right: 20px;
 
   list-style: none;
+}
+
+.additional-catalog__item {
+  margin: 0 auto;
 }
 
 .additional-catalog__gift-wrapper {
@@ -109,4 +112,61 @@
   line-height: 20px;
   color: #ffffff;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .additional-catalog__title {
+    min-height: 30px;
+
+    padding-top: 71px;
+    padding-bottom: 66px;
+    padding-left: 67px;
+    padding-right: 67px;
+
+    font-size: 36px;
+    line-height: 36px;
+
+    overflow: hidden;
+
+    &::after,
+    &::before {
+      border-width: 0 37px;
+    }
+  }
+
+
+  .additional-catalog__list {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 66px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .additional-catalog__gift-wrapper {
+    width: 708px;
+    min-height: 200px;
+
+    margin-bottom: 76px;
+    padding-top: 71px;
+    padding-bottom: 69px;
+    padding-left: 424px;
+    padding-right: 50px;
+
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+      background-size: 708px 200px;
+    }
+
+    &::before {
+      left: 90px;
+    }
+  }
+
+  .additional-catalog__gift {
+    text-align: left;
+  }
 }
