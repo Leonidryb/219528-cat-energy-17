@@ -109,3 +109,35 @@
     margin-top: 10px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .additional-product {
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 895px;
+    min-height: 72px;
+
+    padding-top: 16px;
+    padding-bottom: 13px;
+    padding-left: 0;
+    padding-right: 0;
+
+    border-right: none;
+    border-left: none;
+  }
+
+  .additional-product__title {
+    width: 160px;
+    margin-right: 125px;
+  }
+
+  .additional-product__info tbody {
+    width: 285px;
+
+    padding-top: 5px;
+  }
+
+  .additional-product__link {
+    margin: 0;
+  }
+}
