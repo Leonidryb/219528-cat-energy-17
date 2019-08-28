@@ -80,51 +80,60 @@
         </fieldset>
 
         <fieldset class="profile__group owner-contact">
-          <legend class="owner-contact__title">Контактные данные (владельца кота)</legend>
-          <p class="owner-contact__item">
-            <label for="owner-contact-mail">E-mail:*</label>
-            <input class="owner-contact__option owner-contact__option--mail" id="owner-contact-mail" type="email" value="" placeholder="kuklachev@gmail.com" required>
-          </p>
-          <p class="owner-contact__item">
-            <label for="owner-contact-tel">Телефон:*</label>
-            <input class="owner-contact__option owner-contact__option--tel" id="owner-contact-tel" type="tel" value="" placeholder="8 (960) 900-60-90" required>
-          </p>
+          <legend class="owner-contact__title"><span class="owner-contact__title-wrapper">Контактные данные</span> (владельца кота)</legend>
+          <ul class="owner-contact__list">
+            <li class="owner-contact__item">
+              <label for="owner-contact-mail">E-mail:*</label>
+              <input class="owner-contact__option owner-contact__option--mail" id="owner-contact-mail" type="email" value="" placeholder="kuklachev@gmail.com" required>
+              <svg class="owner-contact__option-picture owner-contact__option-picture--mail" width="18" height="14" viewBox="0 0 18 14">
+                <use xlink:href="img/auto-sprite.svg#icon-mail"></use>
+              </svg>
+            </li>
+            <li class="owner-contact__item">
+              <label for="owner-contact-tel">Телефон:*</label>
+              <input class="owner-contact__option owner-contact__option--tel" id="owner-contact-tel" type="tel" value="" placeholder="8 (960) 900-60-90" required>
+              <svg class="owner-contact__option-picture owner-contact__option-picture--tel" width="21" height="21" viewBox="0 0 21 21">
+                <use xlink:href="img/auto-sprite.svg#icon-phone"></use>
+              </svg>
+            </li>
+          </ul>
         </fieldset>
 
         <fieldset class="profile__group comment">
           <legend class="comment__title">Комментарий</legend>
-          <p class="comment__item">
-            <label class="visually-hidden" for="comment-text">Поле для комментария</label>
-            <textarea class="comment__option comment__option--text" id="comment-text" name="comment" placeholder="расскажите обо всех повадках кота" rows="4"></textarea>
-          </p>
+          <ul class="comment__list">
+            <li class="comment__item">
+              <label class="visually-hidden" for="comment-text">Поле для комментария</label>
+              <textarea class="comment__option comment__option--text" id="comment-text" name="comment" placeholder="расскажите обо всех повадках кота" rows="4"></textarea>
+            </li>
         </fieldset>
 
         <fieldset class="profile__group plus-goods">
           <legend class="plus-goods__title">Дополнительно</legend>
           <ul class="plus-goods__list">
-            <li class="plus-good__item">
-              <input class="plus-goods__option plus-goods__option--sweetener" id="plus-goods-sweetener" type="checkbox" name="plus-goods-sweetener" checked>
+            <li class="plus-goods__item">
+              <input class="plus-goods__option plus-goods__option--sweetener visually-hidden" id="plus-goods-sweetener" type="checkbox" name="plus-goods-sweetener" checked>
               <label for="plus-goods-sweetener">Сахарозаменитель</label>
             </li>
-            <li class="plus-good__item">
-              <input class="plus-goods__option plus-goods__option--water" id="plus-goods-water" type="checkbox" name="plus-goods-water">
+            <li class="plus-goods__item">
+              <input class="plus-goods__option plus-goods__option--water visually-hidden" id="plus-goods-water" type="checkbox" name="plus-goods-water">
               <label for="plus-goods-water">Питьевая вода</label>
             </li>
-            <li class="plus-good__item">
-              <input class="plus-goods__option plus-goods__option--milk" id="plus-goods-milk" type="checkbox" name="plus-goods-milk">
+            <li class="plus-goods__item">
+              <input class="plus-goods__option plus-goods__option--milk visually-hidden" id="plus-goods-milk" type="checkbox" name="plus-goods-milk">
               <label for="plus-goods-milk">Молоко</label>
             </li>
-            <li class="plus-good__item">
-              <input class="plus-goods__option plus-goods__option--vitamin" id="plus-goods-vitamin" type="checkbox" name="plus-goods-vitamin">
+            <li class="plus-goods__item">
+              <input class="plus-goods__option plus-goods__option--vitamin visually-hidden" id="plus-goods-vitamin" type="checkbox" name="plus-goods-vitamin">
               <label for="plus-goods-vitamin">Витамины</label>
             </li>
           </ul>
         </fieldset>
 
         <div class="profile__button-wrapper">
-          <button class=" button  profile__button" type="submit">Отправить заявку</button>
+          <button class="button button--font-up  profile__button" type="submit">Отправить заявку</button>
           <p class="profile__required-hint">
-            *&#8212;Обязательные поля
+            *  &#8212;  Обязательные поля
           </p>
         </div>
 
