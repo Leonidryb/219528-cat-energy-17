@@ -159,3 +159,134 @@
 .owner-contact__option--error ~ .owner-contact__option-picture {
   fill: #ff8282;
 }
+
+@media (min-width: $tablet-width) {
+  .owner-contact {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .owner-contact__title-wrapper {
+    display: inline;
+  }
+
+  .owner-contact__title {
+    width: 1300px;
+
+    margin: 0 auto;
+    margin-bottom: 43px;
+    padding-top: 3px;
+    padding-bottom: 33px;
+    padding-left: 69px;
+
+    font-size: 36px;
+    line-height: 36px;
+
+    &::after,
+    &::before {
+      content: "";
+      display: inline-block;
+
+      position: inherit;
+
+      vertical-align: middle;
+
+      box-sizing: border-box;
+
+      top: auto;
+      left: auto;
+
+      width: 100%;
+      height: 3px;
+
+      background: #68b738;
+      border: solid #ffffff;
+      border-width: 0 41px;
+    }
+
+    &::before {
+      margin-left: -100%;
+    }
+
+    &::after {
+      margin-right: -100%;
+      border-right: none;
+    }
+  }
+
+  .owner-contact__list {
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 71px;
+    padding-right: 65px;
+  }
+
+  .owner-contact__item {
+    margin-bottom: 20px;
+  }
+
+  .owner-contact__item label {
+    margin-right: 19px;
+  }
+
+  .owner-contact__item:nth-child(2) label {
+    margin-left: -3px;
+    margin-right: 16px;
+  }
+
+  .owner-contact__option {
+    min-height: 52px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 60px;
+
+    &:focus {
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 19px;
+    }
+
+    &:invalid,
+    &--error {
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 19px;
+      padding-right: 59px;
+    }
+  }
+
+  .owner-contact__option-picture {
+    &--mail {
+      right: 20px;
+      top: 20px;
+    }
+
+    &--tel {
+      right: 17px;
+      top: 17px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .owner-contact__title {
+    padding-left: 39px;
+
+    overflow: visible;
+  }
+
+  .owner-contact__list {
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .owner-contact__item {
+    width: 570px;
+  }
+}

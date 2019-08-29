@@ -102,22 +102,72 @@
   }
 }
 
-.owner-contact__option-picture {
-  position: absolute;
-
-  &--mail {
-    right: 16px;
-    top: 16px;
-
-    width: 18px;
-    height: 14px;
+@media (min-width: $tablet-width) {
+  .comment {
+    font-size: 20px;
+    line-height: 30px;
   }
 
-  &--tel {
-    right: 13px;
-    top: 13px;
+  .comment__title {
+    margin-bottom: 43px;
+    padding-top: 3px;
+    padding-bottom: 33px;
+    padding-left: 69px;
 
-    width: 21px;
-    height: 21px;
+    font-size: 36px;
+    line-height: 36px;
+
+    &::after,
+    &::before {
+      border-width: 0 41px;
+    }
+  }
+
+  .comment__list {
+    padding-left: 70px;
+    padding-right: 67px;
+  }
+
+  .comment__option {
+    min-height: 174px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 19px;
+    padding-right: 19px;
+
+    &:focus {
+      padding-top: 9px;
+      padding-bottom: 9px;
+      padding-left: 18px;
+    }
+
+    &:invalid,
+    &--error {
+      padding-top: 9px;
+      padding-bottom: 9px;
+      padding-left: 18px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comment__title {
+    width: 1300px;
+
+    margin: 0 auto;
+    margin-bottom: 43px;
+    padding-left: 39px;
+
+    overflow: visible;
+
+    &::after {
+      border-right: 0;
+    }
+  }
+
+  .comment__list {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }

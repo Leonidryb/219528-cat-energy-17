@@ -14,6 +14,7 @@
   display: block;
 
   width: 270px;
+
   margin: 0;
   margin-bottom: 39px;
   padding: 0;
@@ -48,4 +49,110 @@
   line-height: 16px;
   font-weight: 400;
   color: #444444;
+}
+
+@media (min-width: $tablet-width) {
+  .profile__description {
+    width: 520px;
+
+    margin-bottom: 66px;
+
+    padding-right: 70px;
+    padding-left: 70px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .profile__group {
+    margin-bottom: 72px;
+
+    &--owner-contact {
+      margin-bottom: 62px;
+    }
+
+    &--comment {
+      margin-bottom: 56px;
+    }
+
+    &--plus-goods {
+      margin-bottom: 9px;
+    }
+  }
+
+  .profile__button-wrapper {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+
+    margin: 0 auto;
+    padding-top: 0;
+    padding-left: 71px;
+    padding-right: 67px;
+
+    text-align: center;
+  }
+
+  .profile__button {
+    margin-right: 61px;
+  }
+
+  .profile__required-hint {
+    margin-top: 0;
+
+    font-size: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .profile {
+    // width: 1300px;
+  }
+
+  .profile__description {
+    width: 405px;
+
+    margin-bottom: 66px;
+
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .profile__grid-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .profile__group {
+    margin-bottom: 66px;
+
+    &--cat-info {
+      margin-right: 80px;
+    }
+
+    &--owner-contact {
+      margin-bottom: 44px;
+    }
+
+    &--comment {
+      margin-bottom: 58px;
+    }
+
+    &--plus-goods {
+      margin-bottom: 9px;
+    }
+  }
+
+  .profile__button-wrapper {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .profile__button {
+    margin-right: 84px;
+  }
 }

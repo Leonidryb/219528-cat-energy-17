@@ -38,48 +38,50 @@
 
   <main class="page-main">
     <h1 class="page-main__title page-main__title--program">Подбор программы</h1>
-    <section class="page-main__item profile">
+    <section class="page-main__item page-main__item--profile profile">
       <h2 class="profile__title visually-hidden">Анкета для индивидуальной программы</h2>
       <p class="profile__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
       <form class="profile__form" method="post">
 
-        <fieldset class="profile__group cat-info">
-          <legend class="cat-info__title visually-hidden">Информация о коте</legend>
-          <ul class="cat-info__list">
-            <li class="cat-info__item">
-              <label for="cat-info-name">Имя:*</label>
-              <input class="cat-info__option cat-info__option--name" type="text" id="cat-info-name" value="" placeholder="Бaрсик" required>
-            </li>
-            <li class="cat-info__item">
-              <label for="cat-info-weight">Вес (кг):*</label>
-              <input class="cat-info__option cat-info__option--weight" type="text" id="cat-info-weight" value="" placeholder="7" required>
-            </li>
-            <li class="cat-info__item">
-              <label for="cat-info-age">Возраст (лет):</label>
-              <input class="cat-info__option cat-info__option--age" type="text" id="cat-info-age" value="" placeholder="7">
-            </li>
-          </ul>
-        </fieldset>
+        <div class="profile__grid-container">
+          <fieldset class="profile__group profile__group--cat-info cat-info">
+            <legend class="cat-info__title visually-hidden">Информация о коте</legend>
+            <ul class="cat-info__list">
+              <li class="cat-info__item">
+                <label for="cat-info-name">Имя:*</label>
+                <input class="cat-info__option cat-info__option--name" type="text" id="cat-info-name" value="" placeholder="Бaрсик" required>
+              </li>
+              <li class="cat-info__item">
+                <label for="cat-info-weight">Вес (кг):*</label>
+                <input class="cat-info__option cat-info__option--weight" type="text" id="cat-info-weight" value="" placeholder="7" required>
+              </li>
+              <li class="cat-info__item">
+                <label for="cat-info-age">Возраст (лет):</label>
+                <input class="cat-info__option cat-info__option--age" type="text" id="cat-info-age" value="" placeholder="7">
+              </li>
+            </ul>
+          </fieldset>
 
-        <fieldset class="profile__group goal-program">
-          <legend class="goal-program__title visually-hidden">Цель программы</legend>
-          <ul class="goal-program__list">
-            <li class="goal-program__item">
-              <input class="goal-program__option goal-program__option--slim visually-hidden" type="radio" id="goal-program-slim" name="goal-program" value="slim" checked>
-              <label for=goal-program-slim>Похудение</label>
-            </li>
-            <li class="goal-program__item">
-              <input class="goal-program__option goal-program__option--muscle visually-hidden" type="radio" id="goal-program-muscle" name="goal-program" value="muscle">
-              <label for=goal-program-muscle>Набор массы</label>
-            </li>
-            <li class="goal-program__item">
-              <input class="goal-program__option goal-program__option--unknown visually-hidden" type="radio" id="goal-program-unknown" name="goal-program" value="unknown">
-              <label for=goal-program-unknown>Не знаю (нужен ваш совет)</label>
-            </li>
-          </ul>
-        </fieldset>
+          <fieldset class="profile__group goal-program">
+            <legend class="goal-program__title visually-hidden">Цель программы</legend>
+            <ul class="goal-program__list">
+              <li class="goal-program__item">
+                <input class="goal-program__option goal-program__option--slim visually-hidden" type="radio" id="goal-program-slim" name="goal-program" value="slim" checked>
+                <label for=goal-program-slim>Похудение</label>
+              </li>
+              <li class="goal-program__item">
+                <input class="goal-program__option goal-program__option--muscle visually-hidden" type="radio" id="goal-program-muscle" name="goal-program" value="muscle">
+                <label for=goal-program-muscle>Набор массы</label>
+              </li>
+              <li class="goal-program__item">
+                <input class="goal-program__option goal-program__option--unknown visually-hidden" type="radio" id="goal-program-unknown" name="goal-program" value="unknown">
+                <label for=goal-program-unknown>Не знаю (нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
 
-        <fieldset class="profile__group owner-contact">
+        <fieldset class="profile__group profile__group--owner-contact owner-contact">
           <legend class="owner-contact__title"><span class="owner-contact__title-wrapper">Контактные данные</span> (владельца кота)</legend>
           <ul class="owner-contact__list">
             <li class="owner-contact__item">
@@ -99,7 +101,7 @@
           </ul>
         </fieldset>
 
-        <fieldset class="profile__group comment">
+        <fieldset class="profile__group profile__group--comment comment">
           <legend class="comment__title">Комментарий</legend>
           <ul class="comment__list">
             <li class="comment__item">
@@ -108,7 +110,7 @@
             </li>
         </fieldset>
 
-        <fieldset class="profile__group plus-goods">
+        <fieldset class="profile__group profile__group--plus-goods plus-goods">
           <legend class="plus-goods__title">Дополнительно</legend>
           <ul class="plus-goods__list">
             <li class="plus-goods__item">
@@ -131,9 +133,9 @@
         </fieldset>
 
         <div class="profile__button-wrapper">
-          <button class="button button--font-up  profile__button" type="submit">Отправить заявку</button>
+          <button class="button button--font-up button--toll  profile__button" type="submit">Отправить заявку</button>
           <p class="profile__required-hint">
-            *  &#8212;  Обязательные поля
+            * &#8212; Обязательные поля
           </p>
         </div>
 

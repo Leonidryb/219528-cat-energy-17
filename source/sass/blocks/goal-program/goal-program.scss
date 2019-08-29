@@ -15,7 +15,6 @@
 
 .goal-program__list {
   margin: 0;
-  padding: 0;
   padding-top: 26px;
   padding-bottom: 26px;
   padding-left: 20px;
@@ -96,5 +95,69 @@
 
   &::after {
     background-color: rgba(104, 183, 56, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .goal-program {
+    padding-left: 71px;
+    padding-right: 67px;
+
+    font-size: 20px;
+    line-height: 20px;
+
+    border: none;
+  }
+
+  .goal-program__list {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 33px;
+    padding-bottom: 35px;
+    padding-left: 28px;
+    padding-right: 28px;
+
+    border: 1px solid #ededed;
+  }
+
+  .goal-program__item {
+    margin-bottom: 33px;
+    padding-left: 59px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .goal-program__option + label {
+    &::before {
+      top: -9px;
+      left: -60px;
+
+      width: 40px;
+      height: 40px;
+    }
+
+    &::after {
+      top: 2px;
+      left: -49px;
+
+      width: 18px;
+      height: 18px;
+
+      border-radius: 50%;
+
+      background-color: #68b738;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .goal-program {
+    width: 570px;
+
+    padding-left: 0;
+    padding-right: 0;
   }
 }
