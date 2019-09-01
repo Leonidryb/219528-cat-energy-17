@@ -71,7 +71,6 @@
     padding-left: 14px;
   }
 
-  &:invalid,
   &--error {
     border: solid 2px #ff8282;
 
@@ -118,7 +117,6 @@
       padding-left: 16px;
     }
 
-    &:invalid,
     &--error {
       padding-top: 8px;
       padding-bottom: 8px;

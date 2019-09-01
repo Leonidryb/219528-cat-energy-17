@@ -81,10 +81,6 @@
 
 @media (min-width: $tablet-width) {
   .product {
-    // flex-direction: column;
-    // align-items: center;
-    // width: 324px;
-    // min-height: 431px;
     padding-top: 0;
     padding-bottom: 0;
     padding-left: 0;
@@ -110,11 +106,6 @@
 
   .product__description-wrapper {
     padding-top: 0;
-  }
-
-  .product__image-wrapper {
-    // width: 195px;
-    // height: 208px;
   }
 
   .product__image {
@@ -175,11 +166,6 @@
 
 
 @media (min-width: $desktop-width) {
-  // .product {
-  //   flex-shrink: 0;
-  //   width: 245px;
-  // }
-
   .product__container {
     flex-shrink: 0;
     width: 245px;
