@@ -6,6 +6,10 @@
   padding-bottom: 24px;
   padding-left: 19px;
   padding-right: 22px;
+
+  &--grey {
+    background-color: #f2f2f2;
+  }
 }
 
 .main-contacts__slogan {
@@ -41,10 +45,14 @@
     padding-bottom: 58px;
     padding-left: 71px;
     padding-right: 72px;
+
+    &--grey {
+      background-color: #f2f2f2;
+    }
   }
 
   .main-contacts__slogan {
-    width: 154px;
+    width: 160px;
 
     padding-top: 2px;
 

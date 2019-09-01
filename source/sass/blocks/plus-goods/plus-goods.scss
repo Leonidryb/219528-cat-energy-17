@@ -198,15 +198,29 @@
 }
 
 @media (min-width: $desktop-width) {
-  .plus-goods__title {
+  .plus-goods {
     width: 1300px;
 
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .plus-goods__title {
+    position: relative;
+
     padding-left: 39px;
     padding-right: 39px;
+
     overflow: visible;
 
     &::after {
+      position: absolute;
+
+      width: 4000px;
+
+      top: 25px;
+
+      margin-right: 0;
       border-right: 0;
     }
   }

@@ -189,6 +189,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .for-slim {
+    width: 570px;
+  }
+
   .for-slim__title {
     width: 465px;
 
