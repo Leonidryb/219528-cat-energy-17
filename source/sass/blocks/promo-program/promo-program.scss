@@ -5,19 +5,23 @@
   font-weight: 400;
   color: #ffffff;
 
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+
   padding-top: 27px;
   padding-bottom: 22px;
   padding-left: 20px;
   padding-right: 20px;
 
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-color: #ffffff;
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to top, #ffffff 50%, #68b738 50%);
+  background-position: 0 0, 100% 0;
+  background-size: auto, 100% 100%;
+  background-repeat: no-repeat, no-repeat;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/index-background-mobile@2x.jpg");
-    background-size: 320px 305px;
+    background-image: url("../img/index-background-mobile@2x.jpg"), linear-gradient(to top, #ffffff 50%, #68b738 50%);
+    background-size: 320px 305px, 100% 100%;
   }
 }
 
@@ -55,8 +59,10 @@
 
 @media (min-width: $tablet-width) {
   .promo-program {
-    display: flex;
-    flex-direction: column;
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+
 
     color: #111111;
 
@@ -66,6 +72,11 @@
     padding-right: 30px;
 
     background-image: none;
+  }
+
+  .promo-program__wrapper {
+    display: flex;
+    flex-direction: column;
   }
 
   .promo-program__header {
@@ -119,25 +130,34 @@
 
 @media (min-width: $desktop-width) {
   .promo-program {
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: flex-start;
-
-    width: 1300px;
-
+    width: 100%;
     padding-top: 142px;
     padding-left: 40px;
     padding-right: 40px;
 
-    background-image: url("../img/index-background-desktop@1x.jpg");
-    background-position: 100% 0;
+    background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient(to right, #ffffff 50%, #68b738 50%);
+    background-position: 100% 0, 100% 0;
+    background-size: 50% 100%, 100% 100%;
+    background-repeat: no-repeat, no-repeat;
 
     overflow: hidden;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/index-background-desktop@2x.jpg");
-      background-size: 720px 696px;
+      background-image: url("../img/index-background-desktop@2x.jpg"), linear-gradient(to right, #ffffff 50%, #68b738 50%);
+      background-size: 720px 696px, 100% 100%;
+      background-position: 100% 0, 100% 0;
+      background-repeat: no-repeat, no-repeat;
     }
+  }
+
+  .promo-program__wrapper {
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+
+    width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .promo-program__header {

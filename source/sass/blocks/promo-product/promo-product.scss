@@ -43,6 +43,8 @@
   .promo-product {
     width: 1300px;
 
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 40px;
     padding-right: 40px;
   }
@@ -50,11 +52,11 @@
   .promo-product__list {
     display: flex;
     flex-direction: row;
+
+    width: 100%;
   }
 
   .promo-product__item {
-    width: 570px;
-
     margin-bottom: 0;
 
     &:last-child {

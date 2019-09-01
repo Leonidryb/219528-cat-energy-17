@@ -1,0 +1,143 @@
+.additional-product {
+  width: 280px;
+  min-height: 129px;
+
+  padding-top: 12px;
+  padding-bottom: 17px;
+
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #222222;
+
+  border-bottom: 1px solid #cdcdcd;
+
+  &:first-child {
+    border-top: 1px solid #cdcdcd;
+  }
+}
+
+.additional-product__title {
+  margin: 0;
+  margin-bottom: 12px;
+  padding: 0;
+
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.additional-product__info {
+  margin-left: -3px;
+  margin-right: -3px;
+  margin-bottom: -2px;
+
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+}
+
+.additional-product__info tbody {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 280px;
+}
+
+.additional-product__info tr {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+.additional-product__info td {
+  display: block;
+  width: auto;
+  padding: 0;
+}
+
+.additional-product__link {
+  margin-top: 14px;
+}
+
+@media (min-width: $tablet-width) {
+  .additional-product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 708px;
+    min-height: 140px;
+
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-top: 26px;
+
+    border-right: 1px solid #cdcdcd;
+    border-left: 1px solid #cdcdcd;
+  }
+
+  .additional-product__title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .additional-product__info {
+    margin: 0;
+    margin-right: -3px;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .additional-product__info tbody {
+    width: auto;
+    justify-content: flex-end;
+  }
+
+  .additional-product__price {
+    margin-left: 51px;
+  }
+
+  .additional-product__link {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-product {
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 895px;
+    min-height: 72px;
+
+    padding-top: 16px;
+    padding-bottom: 13px;
+    padding-left: 0;
+    padding-right: 0;
+
+    border-right: none;
+    border-left: none;
+  }
+
+  .additional-product__title {
+    width: 160px;
+    margin-right: 125px;
+  }
+
+  .additional-product__info tbody {
+    width: 285px;
+
+    padding-top: 5px;
+  }
+
+  .additional-product__link {
+    margin: 0;
+  }
+}

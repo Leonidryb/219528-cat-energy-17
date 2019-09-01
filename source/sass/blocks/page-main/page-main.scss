@@ -10,6 +10,10 @@
   line-height: 60px;
   font-weight: 400;
   color: #111111;
+
+  &--program {
+    padding-bottom: 25px;
+  }
 }
 
 
@@ -20,14 +24,24 @@
     padding-top: 53px;
 
     font-size: 60px;
+
+    &--program {
+      padding-bottom: 55px;
+    }
   }
 
-  .page-main__item--first {
-    margin-top: 53px;
-  }
+  .page-main__item {
+    &--first {
+      margin-top: 53px;
+    }
 
-  .page-main__item--second {
-    margin-bottom: 46px;
+    &--second {
+      margin-bottom: 46px;
+    }
+
+    &--profile {
+      margin-bottom: 72px;
+    }
   }
 }
 
@@ -42,6 +56,12 @@
     margin-bottom: 74px;
   }
 
+  .page-main__item--profile {
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .page-main__title {
     width: 1300px;
     margin: 0 auto;
@@ -49,5 +69,9 @@
     padding-right: 40px;
     padding-top: 71px;
     padding-bottom: 45px;
+
+    &--program {
+      padding-bottom: 55px;
+    }
   }
 }

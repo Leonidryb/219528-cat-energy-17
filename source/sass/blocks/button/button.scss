@@ -16,6 +16,8 @@
   background-color: #68b738;
   border: none;
 
+  cursor: pointer;
+
   &:hover,
   &:focus {
     background-color: #5eaa2f;
@@ -65,13 +67,34 @@
 
       font-size: 16px;
     }
-  }
 
-  @media (min-width: $desktop-width) {
-    .button {
-      &--font-up {
-        width: 169px;
-      }
+    &--toll {
+      width: 283px;
+
+      padding: 16px 16px;
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    &--large {
+      width: 633px;
+      height: 40px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button {
+    &--font-up {
+      width: 169px;
+    }
+
+    &--large {
+      width: 245px;
+    }
+
+    &--toll {
+      width: 568px;
     }
   }
 }
