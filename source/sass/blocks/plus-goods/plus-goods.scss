@@ -110,10 +110,27 @@
   }
 }
 
-.plus-goods__option:hover + label,
-.plus-goods__option:focus + label {
+.plus-goods__option:hover + label {
   &::before {
     border: solid 1px #bababa;
+  }
+}
+
+.plus-goods__option:focus + label {
+  &::before {
+    border: solid 2px #444444;
+  }
+}
+
+.plus-goods__option:active + label {
+  color: rgba(34, 34, 34, 0.3);
+
+  &::before {
+    opacity: 0.3;
+  }
+
+  &::after {
+    opacity: 0.3;
   }
 }
 

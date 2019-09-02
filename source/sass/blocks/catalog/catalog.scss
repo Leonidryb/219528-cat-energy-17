@@ -20,11 +20,11 @@
   }
 
   .catalog__item {
-    margin-bottom: 141px;
+    margin-top: 141px;
 
-    &:nth-last-child(1),
-    &:nth-last-child(2) {
-      margin-bottom: 0;
+    &:nth-child(1),
+    &:nth-child(2) {
+      margin-top: 0;
     }
   }
 
@@ -51,11 +51,11 @@
       margin-right: 0;
     }
 
-    &:nth-last-child(1),
-    &:nth-last-child(2),
-    &:nth-last-child(3),
-    &:nth-last-child(4) {
-      margin-bottom: 0;
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4) {
+      margin-top: 0;
     }
   }
 }
