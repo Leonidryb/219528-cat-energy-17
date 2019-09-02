@@ -73,10 +73,27 @@
   }
 }
 
-.goal-program__option:hover + label,
-.goal-program__option:focus + label {
+.goal-program__option:hover + label {
   &::before {
     border: solid 1px #bababa;
+  }
+}
+
+.goal-program__option:focus + label {
+  &::before {
+    border: solid 2px #444444;
+  }
+}
+
+.goal-program__option:active + label {
+  color: rgba(34, 34, 34, 0.3);
+
+  &::before {
+    opacity: 0.3;
+  }
+
+  &::after {
+    opacity: 0.3;
   }
 }
 
